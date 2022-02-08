@@ -35,6 +35,7 @@ class gui:
         self.btnAddNew = tk.Button(self.wn, text="Add New", width=10)
         self.btnAddNew.config(command=self.btnAddNewFunction)
 
+    # save the changes (if any) and exit
     def exit(self):
         with open('MontanaCounties.csv', 'w', newline="\n") as csvfile:
             writer = csv.writer(csvfile)
